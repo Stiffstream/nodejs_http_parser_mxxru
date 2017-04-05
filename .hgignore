@@ -1,0 +1,9 @@
+syntax: glob
+
+.externals
+dev/target
+dev/nodejs/http_parser
+dev/test/original_test/main.c
+*.sublime-project
+*.sublime-workspace
+dev/local-build.rb
