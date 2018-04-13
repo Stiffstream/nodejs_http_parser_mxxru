@@ -17,12 +17,12 @@ To use *nodejs_http_parser_mxxru* it is necessary to have:
 ### Cloning of Hg Repository
 
 ```
-hg clone https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.1
+hg clone https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.2
 ```
 
 And then:
 ```
-cd nodejs_http_parser_mxxru-0.1
+cd nodejs_http_parser_mxxru-0.2
 mxxruexternals
 ```
 to download and extract *nodejs_http_parser_mxxru*'s dependencies.
@@ -33,7 +33,7 @@ For *nodejs_http_parser_mxxru* itself:
 ~~~~~
 ::ruby
 MxxRu::arch_externals :nodejs_http_parser_mxxru do |e|
-  e.url 'https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.1/get/v.0.1.0.tar.bz2'
+  e.url 'https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.2/get/v.0.2.0.tar.bz2'
 
   e.map_dir 'dev/nodejs/http_parser_mxxru' => 'dev/nodejs'
 end
@@ -54,8 +54,8 @@ end
 
 Compilation must be performed via Mxx_ru:
 ```
-hg https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.1
-cd nodejs_http_parser_mxxru-0.1
+hg https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.2
+cd nodejs_http_parser_mxxru-0.2
 mxxruexternals
 cd dev
 ruby build.rb

@@ -3,7 +3,7 @@
 #include <iostream>
 #include <cstring>
 
-#include <nodejs/http_parser/http_parser.h>
+#include <http_parser.h>
 
 struct tyny_header_t
 {
