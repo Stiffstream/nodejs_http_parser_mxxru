@@ -1,0 +1,7 @@
+.externals
+*.swp
+/dev/target
+/dev/nodejs/http_parser
+/dev/test/original_test/main.c
+/dev/local-build.rb
+

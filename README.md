@@ -14,15 +14,15 @@ To use *nodejs_http_parser_mxxru* it is necessary to have:
 
 ## Obtaining
 
-### Cloning of Hg Repository
+### Cloning of Git Repository
 
-```
-hg clone https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.2
+```sh
+git clone https://github.com/stiffstream/nodejs_http_parser_mxxru
 ```
 
 And then:
-```
-cd nodejs_http_parser_mxxru-0.2
+```sh
+cd nodejs_http_parser_mxxru
 mxxruexternals
 ```
 to download and extract *nodejs_http_parser_mxxru*'s dependencies.
@@ -30,19 +30,18 @@ to download and extract *nodejs_http_parser_mxxru*'s dependencies.
 ### MxxRu::externals recipe
 
 For *nodejs_http_parser_mxxru* itself:
-~~~~~
-::ruby
+```ruby
 MxxRu::arch_externals :nodejs_http_parser_mxxru do |e|
-  e.url 'https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.2/get/v.0.2.0.tar.bz2'
+  e.url 'https://github.com/Stiffstream/nodejs_http_parser_mxxru/archive/v.0.2.1.tar.gz'
 
   e.map_dir 'dev/nodejs/http_parser_mxxru' => 'dev/nodejs'
 end
-~~~~~
+```
 
 For [nodejs/http-parser](https://github.com/nodejs/http-parser) dependency:
-~~~~~
+```ruby
 MxxRu::arch_externals :nodejs_http_parser do |e|
-  e.url 'https://github.com/nodejs/http-parser/archive/v2.7.1.tar.gz'
+  e.url 'https://github.com/nodejs/http-parser/archive/v2.9.2.tar.gz'
 
   e.map_dir 'contrib' => 'dev/nodejs/http_parser'
   e.map_file 'http_parser.h' => 'dev/nodejs/http_parser/*'
@@ -53,9 +52,9 @@ end
 ## Compilation
 
 Compilation must be performed via Mxx_ru:
-```
-hg https://bitbucket.org/sobjectizerteam/nodejs_http_parser_mxxru-0.2
-cd nodejs_http_parser_mxxru-0.2
+```sh
+git clone https://github.com/stiffstream/nodejs_http_parser_mxxru
+cd nodejs_http_parser_mxxru
 mxxruexternals
 cd dev
 ruby build.rb
@@ -69,3 +68,4 @@ ruby build.rb
 file for more information.
 
 For the license of *nodejs/http-parser* library see LICENSE file in *nodejs/http-parser* distributive.
+
